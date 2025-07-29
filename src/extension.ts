@@ -15,17 +15,17 @@ async function run(uri?: vscode.Uri): Promise<void> {
   try {
     const buf = await fs.readFile(imgPath);
     const meta = await sharp(buf).metadata();
-    const imageInfo = await extract(imgPath, buf, meta);
+    const metadata = await extract(imgPath, buf, meta);
     const panel = vscode.window.createWebviewPanel(
-      "imageInfoWebview",
-      `${imageInfo.file.name}`,
+      "imageMetadataWebview",
+      `${metadata.file.name}`,
       vscode.ViewColumn.Beside,
       { enableFindWidget: true },
     );
     const imgUri = panel.webview.asWebviewUri(vscode.Uri.file(imgPath));
     const workspaceConfiguration = getWorkspaceConfiguration();
     panel.webview.html = view.renderHtml(
-      imageInfo,
+      metadata,
       imgUri,
       workspaceConfiguration,
     );
