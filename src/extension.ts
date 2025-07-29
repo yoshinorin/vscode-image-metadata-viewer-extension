@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import sharp from "sharp";
 import * as fs from "node:fs/promises";
-import { extract, type Metadata } from "./metadata";
+import { extract } from "./metadata";
 import { getWorkspaceConfiguration } from "./config";
 import * as view from "./view";
 import * as dialog from "./dialog";

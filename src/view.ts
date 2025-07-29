@@ -1,5 +1,5 @@
-import * as vscode from "vscode";
-import { WorkspaceConfiguration } from "./config";
+import type * as vscode from "vscode";
+import type { WorkspaceConfiguration } from "./config";
 import { stringifyExifValue, type Metadata } from "./metadata";
 
 export function renderHtml(

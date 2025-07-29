@@ -6,7 +6,7 @@ import { extract } from "../metadata";
 
 suite("Image Info Logic Test Suite", () => {
   const asset = (name: string) =>
-    path.join(__dirname, "../../src/test/assets/" + name);
+    path.join(__dirname, `../../src/test/assets/${name}`);
 
   test("extract returns basic info for a PNG", async () => {
     const buf = await fs.readFile(asset("example.png"));
@@ -42,6 +42,7 @@ suite("Image Info Logic Test Suite", () => {
     assert.ok(Object.keys(metadata.exif).length > 0);
 
     // Test specific EXIF fields
+    // biome-ignore lint: lint/style/noNonNullAssertion
     const exif = metadata.exif!;
     assert.ok(exif.Make || exif.make, "Should have camera make");
     assert.ok(exif.Model || exif.model, "Should have camera model");
@@ -56,6 +57,7 @@ suite("Image Info Logic Test Suite", () => {
     assert.ok(Object.keys(metadata.gps).length > 0);
 
     // Test specific GPS fields
+    // biome-ignore lint: lint/style/noNonNullAssertion
     const gps = metadata.gps!;
     assert.ok(gps.GPSLatitude || gps.Latitude, "Should have latitude");
     assert.ok(gps.GPSLongitude || gps.Longitude, "Should have longitude");

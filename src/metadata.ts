@@ -1,5 +1,5 @@
 import * as path from "path";
-import { type Metadata as SharpMetadata } from "sharp";
+import type { Metadata as SharpMetadata } from "sharp";
 import exifReader from "exif-reader";
 
 export interface Metadata {
@@ -107,7 +107,7 @@ export function stringifyExifValue(key: string, val: any): string {
 
   if (val instanceof Buffer || val instanceof Uint8Array) {
     try {
-      if (key == "Components Configuration") {
+      if (key === "Components Configuration") {
         const components = Array.from(val);
         const names = ["", "Y", "Cb", "Cr", "R", "G", "B"];
         const componentNames = components.map(

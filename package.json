@@ -47,6 +47,7 @@
     "watch": "tsc -watch -p ./",
     "pretest": "npm run fmt && npm run compile",
     "fmt": "biome format --write",
+    "lint": "biome lint --write",
     "test": "vscode-test",
     "prepackage": "npm install && npm run test && npm run compile",
     "package": "vsce package"
