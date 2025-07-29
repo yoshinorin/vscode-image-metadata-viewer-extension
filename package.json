@@ -1,0 +1,73 @@
+{
+  "name": "image-metadata-viewer",
+  "displayName": "Image Metadata Viewer",
+  "description": "Displays detailed metadata information about image files including EXIF data, GPS information, file properties, and more.",
+  "version": "0.0.1",
+  "publisher": "yoshinorin",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoshinorin/vscode-image-metadata-viewer-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/issues"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "keywords": [
+    "image",
+    "exif",
+    "gps"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "image-metadata-viewer.view",
+        "title": "Show Image Metadata"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "image-metadata-viewer.view",
+          "when": "resourceExtname =~ /\\.(png|jpg|jpeg|gif|bmp|webp|tiff)$/i",
+          "group": "navigation@100"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm install && npm run test && npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run fmt && npm run compile",
+    "fmt": "biome format --write",
+    "test": "vscode-test",
+    "prepackage": "npm install && npm run test && npm run compile",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "exif-reader": "2.0.2",
+    "sharp": "0.34.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.2",
+    "@types/mocha": "10.0.10",
+    "@types/node": "24.1.0",
+    "@types/vscode": "1.102.0",
+    "@vscode/test-cli": "0.0.11",
+    "@vscode/test-electron": "2.5.2",
+    "@vscode/vsce": "3.6.0",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "vscode": "^1.102.0",
+    "node": ">=24.0.0",
+    "npm": ">=10.0.0"
+  }
+}
