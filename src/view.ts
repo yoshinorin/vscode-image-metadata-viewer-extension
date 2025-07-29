@@ -70,7 +70,6 @@ export function renderHtml(
       </style>
     </head>
     <body>
-      <h1>Image Info</h1>
       <img src="${imgUri}" class="image-preview" alt="${escapeHtml(metadata.file.name)}" />
 
       <div class="section">
