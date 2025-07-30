@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Release-v0.0.1-blue.svg?style=flat-square)
 ![](https://img.shields.io/badge/vscode-^1.102.0-blue.svg?style=flat-square)
-[![CI](https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/actions/workflows/ci.yaml/badge.svg)](https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/actions/workflows/ci.yaml)
+[![CI](https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/actions/workflows/ci.yml/badge.svg)](https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/actions/workflows/ci.yml)
 
 # Image Metadata Viewer for Visual Studio Code
 
