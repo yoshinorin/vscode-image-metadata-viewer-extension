@@ -25,7 +25,7 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 
 > **NOTE**: The preview area in the sample image below uses a solid gray image for demonstration purposes. While this may look unclear at first glance, when you use the extension, your selected image will be displayed in this area.
 
-<img src="./images/docs/ext-sample.png" style="max-height:600px;">
+<img src="https://raw.githubusercontent.com/yoshinorin/vscode-image-metadata-viewer-extension/refs/heads/master/images/docs/ext-sample.png" style="max-height:600px;">
 
 ## Usage
 
@@ -34,7 +34,7 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 1. Right-click on any supported image file in the VS Code Explorer
 2. Select `Show Image Metadata`
 
-![](./images/docs/explorer.png)
+![](https://raw.githubusercontent.com/yoshinorin/vscode-image-metadata-viewer-extension/refs/heads/master/images/docs/explorer.png)
 
 ### Command Palette
 
