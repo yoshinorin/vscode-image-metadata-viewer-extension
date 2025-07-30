@@ -14,7 +14,7 @@
     "url": "https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/issues"
   },
   "categories": [
-    "Other"
+    "Visualization"
   ],
   "activationEvents": [
     "onStartupFinished"
