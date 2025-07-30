@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Release-v0.0.1-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/Release-v1.0.0-blue.svg?style=flat-square)
 ![](https://img.shields.io/badge/vscode-^1.102.0-blue.svg?style=flat-square)
 [![CI](https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/actions/workflows/ci.yml/badge.svg)](https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/actions/workflows/ci.yml)
 
@@ -46,3 +46,6 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 
 * Visual Studio Code `1.102.0+`
 
+## Release Note
+
+* Please see [releases](https://github.com/yoshinorin/vscode-image-metadata-viewer-extension/releases)

@@ -2,7 +2,7 @@
   "name": "image-metadata-viewer",
   "displayName": "Image Metadata Viewer",
   "description": "Displays detailed metadata information about image files including EXIF data, GPS information, file properties, and more.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "yoshinorin",
   "license": "Apache-2.0",
   "icon": "images/icon.png",
