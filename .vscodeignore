@@ -12,3 +12,4 @@ vsc-extension-quickstart.md
 .github/**
 biome.json
 out/test/**
+images/docs/**

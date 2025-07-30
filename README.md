@@ -21,14 +21,22 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 * WebP
 * TIFF
 
+## Images
+
+> **NOTE**: The preview area in the sample image below uses a solid gray image for demonstration purposes. While this may look unclear at first glance, when you use the extension, your selected image will be displayed in this area.
+
+<img src="./images/docs/ext-sample.png" style="max-height:600px;">
+
 ## Usage
 
-### Method 1: Context Menu
+### Explorer
 
 1. Right-click on any supported image file in the VS Code Explorer
-2. Select `Show Image Metadata` from the context menu
+2. Select `Show Image Metadata`
 
-### Method 2: Command Palette
+![](./images/docs/explorer.png)
+
+### Command Palette
 
 1. Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`)
 2. Type `Show Image Metadata` and select the command
@@ -36,4 +44,5 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 
 ## Requirements
 
-* Visual Studio Code 1.102.0 later
+* Visual Studio Code `1.102.0+`
+
