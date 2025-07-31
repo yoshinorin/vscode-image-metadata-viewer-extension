@@ -12,6 +12,20 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 * **Visual Preview**: Display the image alongside its metadata
     * HTML table and JSON
 
+## Supported Platforms
+
+> **Note**: The publisher has only tested the extension on `win32-x64` and `linux-x64`. While it is expected to work on other platforms listed above, they have not been fully verified.
+
+* Windows
+    * win32-x64
+* Linux
+    * linux-x64
+    * linux-armhf
+    * linux-arm64
+* MacOS
+    * darwin-x64
+    * darwin-arm64
+
 ## Supported Image Formats
 
 * PNG
