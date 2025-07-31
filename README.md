@@ -14,7 +14,7 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 
 ## Supported Platforms
 
-> **Note**: The publisher has only tested the extension on `win32-x64` and `linux-x64`. While it is expected to work on other platforms listed above, they have not been fully verified.
+> **NOTE**: The publisher has only tested the extension on `win32-x64` and `linux-x64`. While it is expected to work on other platforms listed belows, they have not been fully verified.
 
 * Windows
     * win32-x64
