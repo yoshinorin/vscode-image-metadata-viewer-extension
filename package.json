@@ -54,17 +54,17 @@
     "package": "vsce package"
   },
   "dependencies": {
-    "exif-reader": "2.0.2",
-    "sharp": "0.34.3"
+    "exif-reader": "2.0.3",
+    "sharp": "0.34.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.1.2",
+    "@biomejs/biome": "2.4.9",
     "@types/mocha": "10.0.10",
     "@types/node": "24.1.0",
     "@types/vscode": "1.102.0",
-    "@vscode/test-cli": "0.0.11",
+    "@vscode/test-cli": "0.0.12",
     "@vscode/test-electron": "2.5.2",
-    "@vscode/vsce": "3.6.0",
+    "@vscode/vsce": "3.7.1",
     "typescript": "5.8.3"
   },
   "engines": {
