@@ -18,6 +18,7 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 
 * Windows
     * win32-x64
+    * win32-arm64
 * Linux
     * linux-x64
     * linux-armhf
