@@ -14,3 +14,4 @@ biome.json
 out/test/**
 images/docs/**
 AGENTS.md
+.claude
