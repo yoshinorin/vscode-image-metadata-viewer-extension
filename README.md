@@ -44,6 +44,8 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 
 ## Usage
 
+You can also open the Image Metadata Viewer by simply clicking an image file in the Explorer. Enable the `image-metadata-viewer.openAsDefaultEditor` setting in the [Configuration](#configuration) section below.
+
 ### Explorer
 
 1. Right-click on any supported image file in the VS Code Explorer
@@ -56,6 +58,30 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 1. Open Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`)
 2. Type `Show Image Metadata` and select the command
 3. Choose an image file from the file dialog
+
+## Configuration
+
+| Setting | Type | Default | Description |
+|---|---|---|---|
+| `image-metadata-viewer.openAsDefaultEditor` | `boolean` | `false` | When enabled, clicking an image file in the Explorer opens the Image Metadata Viewer instead of the built-in image viewer. |
+
+To open the Image Metadata Viewer by default when clicking image files, add the following to your `settings.json`:
+
+```json
+"image-metadata-viewer.openAsDefaultEditor": true
+```
+
+> **NOTE**: Even when this setting is disabled, you can always open the viewer via right-click or the Command Palette.
+
+If you already have a custom editor association for a specific image type in `workbench.editorAssociations`, this extension will not overwrite it. For example, if your `settings.json` contains:
+
+```json
+"workbench.editorAssociations": {
+  "*.png": "other-extension.pngViewer"
+}
+```
+
+Enabling `openAsDefaultEditor` will apply to other image types (e.g., `*.jpg`, `*.gif`) but `*.png` will continue to use `other-extension.pngViewer`. A warning notification will inform you which patterns were skipped.
 
 ## Requirements
 

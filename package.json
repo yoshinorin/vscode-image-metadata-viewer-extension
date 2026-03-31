@@ -30,16 +30,87 @@
       {
         "command": "image-metadata-viewer.view",
         "title": "Show Image Metadata"
+      },
+      {
+        "command": "image-metadata-viewer.openSettings",
+        "title": "Image Metadata Viewer: Open Settings"
       }
     ],
     "menus": {
       "explorer/context": [
         {
           "command": "image-metadata-viewer.view",
-          "when": "resourceExtname =~ /\\.(png|jpg|jpeg|gif|bmp|webp|tiff)$/i",
+          "when": "resourceExtname =~ /\\.(png|jpg|jpeg|gif|bmp|webp|tiff?)$/i",
           "group": "navigation@100"
         }
       ]
+    },
+    "customEditors": [
+      {
+        "viewType": "image-metadata-viewer.customEditor",
+        "displayName": "Image Metadata Viewer",
+        "selector": [
+          {
+            "filenamePattern": "*.png"
+          },
+          {
+            "filenamePattern": "*.PNG"
+          },
+          {
+            "filenamePattern": "*.jpg"
+          },
+          {
+            "filenamePattern": "*.JPG"
+          },
+          {
+            "filenamePattern": "*.jpeg"
+          },
+          {
+            "filenamePattern": "*.JPEG"
+          },
+          {
+            "filenamePattern": "*.gif"
+          },
+          {
+            "filenamePattern": "*.GIF"
+          },
+          {
+            "filenamePattern": "*.bmp"
+          },
+          {
+            "filenamePattern": "*.BMP"
+          },
+          {
+            "filenamePattern": "*.webp"
+          },
+          {
+            "filenamePattern": "*.WEBP"
+          },
+          {
+            "filenamePattern": "*.tif"
+          },
+          {
+            "filenamePattern": "*.tiff"
+          },
+          {
+            "filenamePattern": "*.TIF"
+          },
+          {
+            "filenamePattern": "*.TIFF"
+          }
+        ],
+        "priority": "option"
+      }
+    ],
+    "configuration": {
+      "title": "Image Metadata Viewer",
+      "properties": {
+        "image-metadata-viewer.openAsDefaultEditor": {
+          "type": "boolean",
+          "default": false,
+          "description": "When enabled, clicking an image file opens the Image Metadata Viewer instead of the built-in image viewer."
+        }
+      }
     }
   },
   "scripts": {
