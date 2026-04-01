@@ -71,4 +71,4 @@ jobs:
       - name: Package
         uses: coactions/setup-xvfb@b6b4fcfb9f5a895edadc3bc76318fae0ac17c8b3 #v1.0.1
         with:
-          run: npx vsce package --target ${{ env.target }}
+          run: npm run package:no-hooks -- --target ${{ env.target }}

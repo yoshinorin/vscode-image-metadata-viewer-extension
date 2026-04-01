@@ -122,7 +122,9 @@
     "lint": "biome lint --write",
     "test": "vscode-test",
     "prepackage": "npm install && npm run test && npm run compile",
-    "package": "vsce package"
+    "package": "vsce package",
+    "package:no-hooks": "vsce package",
+    "publish:no-hooks": "vsce publish"
   },
   "dependencies": {
     "exif-reader": "2.0.3",
