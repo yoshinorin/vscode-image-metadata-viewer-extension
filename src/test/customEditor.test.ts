@@ -5,7 +5,7 @@ import {
   ImageDocument,
   ImageMetadataEditorProvider,
   syncEditorAssociations,
-} from "../extension";
+} from "../customEditor";
 
 suite("ImageDocument", () => {
   test("stores URI", () => {
