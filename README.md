@@ -9,8 +9,7 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 ## Features
 
 * **Metadata Display**: View file information, EXIF data, and GPS.
-* **Visual Preview**: Display the image alongside its metadata
-    * HTML table and JSON
+* **Visual Preview**: Display the image alongside its metadata (HTML table and JSON)
 
 ## Supported Platforms
 
@@ -44,9 +43,13 @@ A comprehensive VS Code extension that displays detailed metadata information ab
 
 ## Usage
 
-You can also open the Image Metadata Viewer by simply clicking an image file in the Explorer. Enable the `image-metadata-viewer.openAsDefaultEditor` setting in the [Configuration](#configuration) section below.
+Image Metadata Viewer can be opened in the following ways:
 
-### Explorer
+- **Click to open (opt-in)**: When `image-metadata-viewer.openAsDefaultEditor` is enabled, clicking an image file in the Explorer opens the Image Metadata Viewer instead of the built-in image viewer. See [Configuration](#configuration) for details.
+- **Right-click**: Right-click on a supported image file in the Explorer and select `Show Image Metadata`
+- **Command Palette**: Open Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and run `Show Image Metadata`
+
+### Right-click
 
 1. Right-click on any supported image file in the VS Code Explorer
 2. Select `Show Image Metadata`
@@ -70,8 +73,6 @@ To open the Image Metadata Viewer by default when clicking image files, add the 
 ```json
 "image-metadata-viewer.openAsDefaultEditor": true
 ```
-
-> **NOTE**: Even when this setting is disabled, you can always open the viewer via right-click or the Command Palette.
 
 If you already have a custom editor association for a specific image type in `workbench.editorAssociations`, this extension will not overwrite it. For example, if your `settings.json` contains:
 
