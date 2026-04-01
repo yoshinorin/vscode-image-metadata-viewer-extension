@@ -17,7 +17,9 @@
     "Visualization"
   ],
   "activationEvents": [
-    "onStartupFinished"
+    "onCommand:image-metadata-viewer.view",
+    "onCommand:image-metadata-viewer.openSettings",
+    "onCustomEditor:image-metadata-viewer.customEditor"
   ],
   "keywords": [
     "image",
