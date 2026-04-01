@@ -43,7 +43,7 @@
         {
           "command": "image-metadata-viewer.view",
           "when": "resourceExtname =~ /\\.(png|jpg|jpeg|gif|bmp|webp|tiff?)$/i",
-          "group": "navigation@100"
+          "group": "z_metadata"
         }
       ]
     },
